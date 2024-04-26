@@ -1,0 +1,15 @@
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: postgres-app-service
+  labels: 
+    author: madhav
+spec:
+  type: ClusterIP
+  selector:
+    name: postgres-app
+  ports:
+  - port: 5432
+    targetPort: 5432
+...
