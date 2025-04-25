@@ -14,7 +14,7 @@ spec:
   template:
     metadata:
       labels:
-        name: result-app-pod
+        name: result-app
     spec:
       containers:
       - name: result-app
