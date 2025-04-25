@@ -14,7 +14,7 @@ AUTH_REMOTE_URL="https://${GITHUB_USER}:${GITHUB_TOKEN}@github.com/${GITHUB_USER
 FILES=("delete.sh" "deploy.sh" "Push-code.sh" "postgres-db-service.yml" "redis-db-service.yml" "voting-app-deployment.yml" "result-app-deployment.yml" "voting-app-service.yml" "postgres-Db-deployment.yml" "redis-Db-deployment.yml" "result-app-service.yml" "worker-app-deployment.yml")
 
 # Files to remove (if needed)
-FILES_TO_REMOVE=("")
+FILES_TO_REMOVE=("") 
 
 # Git config to fix line ending warnings
 git config --global core.autocrlf input
@@ -47,6 +47,10 @@ fi
 git remote remove origin 2>/dev/null || true
 git remote add origin "$AUTH_REMOTE_URL"
 
+# Pull the latest changes from the repo to ensure we are up to date
+echo "Pulling latest changes from GitHub..."
+git pull origin master || echo "No changes to pull or already up-to-date."
+
 # Add files
 for file in "${FILES[@]}"; do
     if [ -f "$file" ]; then
@@ -69,7 +73,7 @@ done
 
 # Get commit count and create commit message
 commit_count=$(git rev-list --count HEAD || echo "0")  # If no commits, count will be 0
-commit_message="Commit $commit_count: $(git diff --cached --name-only | tr '\n' ' ')"
+commit_message="Commit $commit_count: $(git diff --cached --name-only | tr '\n' ' ')" 
 
 # Commit changes with dynamic message
 git commit -m "$commit_message" || echo "No changes to commit"
