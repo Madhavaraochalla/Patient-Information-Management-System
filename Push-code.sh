@@ -4,7 +4,7 @@ set -e
 
 # Your GitHub username and repo name
 GITHUB_USER="Madhavaraochalla"
-REPO_NAME="Patient-Information-Management-System"
+REPO_NAME="Patient-Information-Management-System-1"
 
 # Use the exported token (make sure it's exported before running the script)
 # This assumes you've already done: export GITHUB_TOKEN=your_token_value
@@ -14,7 +14,7 @@ AUTH_REMOTE_URL="https://${GITHUB_USER}:${GITHUB_TOKEN}@github.com/${GITHUB_USER
 FILES=("delete.sh" "deploy.sh" "Push-code.sh" "postgres-db-service.yml" "redis-db-service.yml" "voting-app-deployment.yml" "result-app-deployment.yml" "voting-app-service.yml" "postgres-Db-deployment.yml" "redis-Db-deployment.yml" "result-app-service.yml" "worker-app-deployment.yml")
 
 # Files to remove (if needed)
-FILES_TO_REMOVE=("test") 
+FILES_TO_REMOVE=("") 
 
 # Git config to fix line ending warnings
 git config --global core.autocrlf input
