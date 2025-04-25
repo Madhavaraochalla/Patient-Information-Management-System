@@ -4,14 +4,14 @@ set -e
 
 # Your GitHub username and repo name
 GITHUB_USER="Madhavaraochalla"
-REPO_NAME="Patient-Information-Management-System-1"
+REPO_NAME="Patient-Information-Management-System"
 
 # Use the exported token (make sure it's exported before running the script)
 # This assumes you've already done: export GITHUB_TOKEN=your_token_value
 AUTH_REMOTE_URL="https://${GITHUB_USER}:${GITHUB_TOKEN}@github.com/${GITHUB_USER}/${REPO_NAME}.git"
 
 # Files to commit (Ensure these are valid files in the current directory)
-FILES=("delete.sh" "deploy.sh" "Push-code.sh" "postgres-db-service.yml" "redis-db-service.yml" "voting-app-deployment.yml" "result-app-deployment.yml" "voting-app-service.yml" "postgres-Db-deployment.yml" "redis-Db-deployment.yml" "result-app-service.yml" "worker-app-deployment.yml")
+FILES=("delete.sh" "deploy.sh" "Push-code.sh" "postgres-db-service.yml" "redis-db-service.yml" "voting-app-deployment.yml" "result-app-deployment.yml" "voting-app-service.yml" "postgres-Db-deployment.yml" "redis-Db-deployment.yml" "result-app-service.yml" "worker-app-deployment.yml" "delete-repo.sh")
 
 # Files to remove (if needed)
 FILES_TO_REMOVE=("") 
