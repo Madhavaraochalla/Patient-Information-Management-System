@@ -14,7 +14,7 @@ spec:
   template:
     metadata:
       labels:
-        name: postgres-db-pod
+        name: postgres-db
     spec:
       containers:
       - name: postgres-db
