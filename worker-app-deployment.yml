@@ -14,7 +14,7 @@ spec:
   template:
     metadata:
       labels:
-        name: worker-app-pod
+        name: worker-app
     spec:
       containers:
       - name: worker-app
