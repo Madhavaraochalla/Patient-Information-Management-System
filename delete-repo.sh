@@ -4,7 +4,7 @@ set -e
 
 # GitHub username and repo name
 GITHUB_USER="Madhavaraochalla"
-REPO_NAME="Patient-Information-Management-System"
+REPO_NAME="Patient-Information-Management-System-1"
 
 # Use the exported token (make sure it's exported before running the script)
 # This assumes you've already done: export GITHUB_TOKEN=your_token_value
