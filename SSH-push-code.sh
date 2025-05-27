@@ -1,7 +1,7 @@
 #!/bin/bash
 
 set -e
-set -x
+#set -x
 set -o pipefail
 
 REPO_SSH_URL="git@github.com:Madhavaraochalla/Patient-Information-Management-System.git"
