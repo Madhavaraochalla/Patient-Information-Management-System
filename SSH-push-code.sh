@@ -5,7 +5,7 @@ set -x
 set -o pipefail
 
 REPO_SSH_URL="git@github.com:Madhavaraochalla/Patient-Information-Management-System.git"
-FILES=("SSH-push-code.sh" "delete.sh" "deploy.sh" "delete-repo.sh" "postgres-db-service.yml" "redis-db-service.yml" "voting-app-deployment.yml" "result-app-deployment.yml" "voting-app-service.yml" "postgres-Db-deployment.yml" "redis-Db-deployment.yml" "result-app-service.yml" "worker-app-deployment.yml")
+FILES=("SSH-push-code.sh" "Push-code.sh" "delete.sh" "deploy.sh" "delete-repo.sh" "postgres-db-service.yml" "redis-db-service.yml" "voting-app-deployment.yml" "result-app-deployment.yml" "voting-app-service.yml" "postgres-Db-deployment.yml" "redis-Db-deployment.yml" "result-app-service.yml" "worker-app-deployment.yml")
 FILES_TO_REMOVE=("")
 
 # Configure Git
