@@ -2,6 +2,9 @@
 
 # Exit on any error
 set -e
+set -x
+set -o pipefail
+
 
 REPO_URL="git@github.com:Madhavaraochalla/Patient-Information-Management-System.git"
 CLONE_DIR="Patient-Information-Management-System"

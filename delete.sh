@@ -1,6 +1,8 @@
 #!/bin/bash
 
 set -e
+set -x
+set -o pipefail
 
 CLONE_DIR="Patient-Information-Management-System"
 
